@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Verbs.Services;
+using Verbs.Services.Implementations;
 
 namespace Scaffold
 {
@@ -27,6 +29,9 @@ namespace Scaffold
         {
 
             services.AddControllers();
+
+            //Dependency Injection
+            services.AddScoped<IPersonService, PersonServiceImplementation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
