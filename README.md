@@ -1,1 +1,3 @@
-# RestWithASP-NET5
+## 🚀 Tecnologias
+
+- ASP.NET Core 5.0
