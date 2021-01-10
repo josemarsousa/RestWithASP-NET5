@@ -11,15 +11,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/person",
+      "launchUrl": "api/v1/person",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Verbs": {
+    "ConnectingToDatabase": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/person",
+      "launchUrl": "api/v1/person",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

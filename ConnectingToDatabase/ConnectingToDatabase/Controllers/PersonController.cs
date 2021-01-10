@@ -1,16 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Verbs.Model;
 using Verbs.Services;
 
 namespace Scaffold.Controllers
 {
+    [ApiVersion("1")]
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class PersonController : ControllerBase
     {
 
@@ -24,13 +21,13 @@ namespace Scaffold.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult FindAll()
         {
             return Ok(_personService.FindAll());
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(long id)
+        public IActionResult FindById(long id)
         {
             var person = _personService.FindById(id);
             if (person == null) return NotFound();
@@ -38,14 +35,14 @@ namespace Scaffold.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Person person)
+        public IActionResult Create([FromBody] Person person)
         {
             if (person == null) return BadRequest();
             return Ok(_personService.Create(person));
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] Person person)
+        public IActionResult Update([FromBody] Person person)
         {
             if (person == null) return BadRequest();
             return Ok(_personService.Update(person));
