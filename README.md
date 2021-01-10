@@ -6,9 +6,10 @@
 
 - Bando de dados MySQL
 
-## Database script
+## Database script SQL
 
-`CREATE DATABASE `rest_with_aspnet`;
+```sql
+CREATE DATABASE `rest_with_aspnet`;
 USE `rest_with_aspnet`;
 CREATE TABLE IF NOT EXISTS `person` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -17,9 +18,10 @@ CREATE TABLE IF NOT EXISTS `person` (
   `gender` varchar(6) NOT NULL,
   `last_name` varchar(80) NOT NULL,
   PRIMARY KEY (`id`)
-);`
+);
+```
 
 ## Dependencies
 
-Microsoft.AspNetCore.Mvc.Versioning;
-Pomelo.EntityFrameworkCore.MySql.
+1. Microsoft.AspNetCore.Mvc.Versioning;
+2. Pomelo.EntityFrameworkCore.MySql.
