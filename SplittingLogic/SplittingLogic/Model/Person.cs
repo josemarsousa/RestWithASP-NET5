@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Verbs.Model
+namespace SplittingLogic.Model
 {
     [Table("person")]
     public class Person

@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Verbs.Model;
 
-namespace ConnectingToDatabase.Model.Context
+namespace SplittingLogic.Model.Context
 {
     public class MySQLContext : DbContext
     {

@@ -1,16 +1,17 @@
-﻿using ConnectingToDatabase.Model.Context;
+﻿using Splitting.Repository;
+using SplittingLogic.Model;
+using SplittingLogic.Model.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Verbs.Model;
 
-namespace Verbs.Services.Implementations
+namespace SplittingLogic.Repository.Implementations
 {
-    public class PersonServiceImplementation : IPersonService
+    public class PersonRepositoryImplementation : IPersonRepository
     {
         private MySQLContext _context;
 
-        public PersonServiceImplementation(MySQLContext context)
+        public PersonRepositoryImplementation(MySQLContext context)
         {
             _context = context;
         }
@@ -75,7 +76,7 @@ namespace Verbs.Services.Implementations
             }
         }
         
-        private bool Exists(long id)
+        public bool Exists(long id)
         {
 
             return _context.Persons.Any(p => p.Id.Equals(id));

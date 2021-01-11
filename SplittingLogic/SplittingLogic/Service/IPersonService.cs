@@ -1,7 +1,7 @@
-﻿using Verbs.Model;
+﻿using SplittingLogic.Model;
 using System.Collections.Generic;
 
-namespace Verbs.Services
+namespace SplittingLogic.Services
 {
     public interface IPersonService
     {

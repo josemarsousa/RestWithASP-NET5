@@ -1,14 +1,16 @@
-using ConnectingToDatabase.Model.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Verbs.Services;
-using Verbs.Services.Implementations;
+using Splitting.Repository;
+using SplittingLogic.Model.Context;
+using SplittingLogic.Repository.Implementations;
+using SplittingLogic.Services;
+using SplittingLogic.Services.Implementations;
 
-namespace Scaffold
+namespace SplittingLogic
 {
     public class Startup
     {
@@ -33,6 +35,7 @@ namespace Scaffold
 
             //Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImplementation>();
+            services.AddScoped<IPersonRepository, PersonRepositoryImplementation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
