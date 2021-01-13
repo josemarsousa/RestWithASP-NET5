@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SplittingLogic.Model
+namespace Migrations.Model
 {
     [Table("person")]
     public class Person

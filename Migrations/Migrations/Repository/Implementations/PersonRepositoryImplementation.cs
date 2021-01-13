@@ -1,11 +1,10 @@
-﻿using Splitting.Repository;
-using SplittingLogic.Model;
-using SplittingLogic.Model.Context;
+﻿using Migrations.Model;
+using Migrations.Model.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SplittingLogic.Repository.Implementations
+namespace Migrations.Repository.Implementations
 {
     public class PersonRepositoryImplementation : IPersonRepository
     {
@@ -40,7 +39,7 @@ namespace SplittingLogic.Repository.Implementations
         }
         public Person Update(Person person)
         {
-            if (!Exists(person.Id)) return new Person();
+            if (!Exists(person.Id)) return null;
 
             var result = _context.Persons.SingleOrDefault(p => p.Id.Equals(person.Id));
             if (result != null)

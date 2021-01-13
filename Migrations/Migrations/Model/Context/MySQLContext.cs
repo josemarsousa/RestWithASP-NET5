@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace SplittingLogic.Model.Context
+namespace Migrations.Model.Context
 {
     public class MySQLContext : DbContext
     {

@@ -4,24 +4,21 @@
 
 ## ✋🏻 Pré-requisitos
 
-- Bando de dados MySQL
+- Banco de dados MySQL
 
-## Database script SQL
+## 🔥 Instalação e execução
 
+1. Execute o comando abaixo para criação do db;
 ```sql
-CREATE DATABASE `rest_with_aspnet`;
-USE `rest_with_aspnet`;
-CREATE TABLE IF NOT EXISTS `person` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `address` varchar(100) NOT NULL,
-  `first_name` varchar(80) NOT NULL,
-  `gender` varchar(6) NOT NULL,
-  `last_name` varchar(80) NOT NULL,
-  PRIMARY KEY (`id`)
-);
+CREATE DATABASE `rest_with_aspnet`;;
 ```
+2. Execute o projeto em IIS Express.
 
 ## Dependencies
 
 1. Microsoft.AspNetCore.Mvc.Versioning;
 2. Pomelo.EntityFrameworkCore.MySql.
+3. Evolve
+4. Serilog
+4. Serilog.AspNetCore
+5. Serilog.Sinks.Console

@@ -1,8 +1,8 @@
-﻿using Splitting.Repository;
-using SplittingLogic.Model;
+﻿using Migrations.Model;
+using Migrations.Repository;
 using System.Collections.Generic;
 
-namespace SplittingLogic.Services.Implementations
+namespace Migrations.Services.Implementations
 {
     public class PersonServiceImplementation : IPersonService
     {

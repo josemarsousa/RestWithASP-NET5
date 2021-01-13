@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace SplittingLogic
+namespace Migrations
 {
     public class Program
     {

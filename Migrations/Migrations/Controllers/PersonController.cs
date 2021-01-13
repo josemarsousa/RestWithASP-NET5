@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SplittingLogic.Model;
-using SplittingLogic.Services;
+using Migrations.Model;
+using Migrations.Services;
 
-namespace SplittingLogic.Controllers
+namespace Migrations.Controllers
 {
     [ApiVersion("1")]
     [ApiController]

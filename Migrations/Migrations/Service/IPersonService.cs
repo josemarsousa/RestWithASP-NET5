@@ -1,15 +1,14 @@
-﻿using SplittingLogic.Model;
+﻿using Migrations.Model;
 using System.Collections.Generic;
 
-namespace Splitting.Repository
+namespace Migrations.Services
 {
-    public interface IPersonRepository
+    public interface IPersonService
     {
         Person Create(Person person);
         Person FindById(long id);
         List<Person> FindAll();
         Person Update(Person person);
         void Delete(long id);
-        bool Exists(long id);
     }
 }
