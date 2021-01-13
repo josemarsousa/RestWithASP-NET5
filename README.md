@@ -10,7 +10,7 @@
 
 1. Execute o comando abaixo para criação do db;
 ```sql
-CREATE DATABASE `rest_with_aspnet`;;
+CREATE DATABASE `rest_with_aspnet`;
 ```
 2. Execute o projeto em IIS Express.
 
