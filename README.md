@@ -4,7 +4,7 @@
 
 ## ✋🏻 Pré-requisitos
 
-- Bando de dados MySQL
+- Banco de dados MySQL
 
 ## Database script SQL
 
