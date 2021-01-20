@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Migrations.Model
+namespace GenericRepository.Model
 {
     [Table("person")]
     public class Person

@@ -1,10 +1,10 @@
-﻿using Migrations.Model;
-using Migrations.Model.Context;
+﻿using GenericRepository.Model;
+using GenericRepository.Model.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Migrations.Repository.Implementations
+namespace GenericRepository.Repository.Implementations
 {
     public class PersonRepositoryImplementation : IPersonRepository
     {
@@ -77,7 +77,6 @@ namespace Migrations.Repository.Implementations
         
         public bool Exists(long id)
         {
-
             return _context.Persons.Any(p => p.Id.Equals(id));
         }
     }

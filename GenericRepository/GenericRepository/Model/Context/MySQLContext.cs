@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Migrations.Model.Context
+namespace GenericRepository.Model.Context
 {
     public class MySQLContext : DbContext
     {

@@ -1,7 +1,7 @@
-﻿using Migrations.Model;
+﻿using GenericRepository.Model;
 using System.Collections.Generic;
 
-namespace Migrations.Services
+namespace GenericRepository.Services
 {
     public interface IPersonService
     {

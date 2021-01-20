@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GenericRepository.Model;
+using GenericRepository.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Migrations.Model;
-using Migrations.Services;
 
-namespace Migrations.Controllers
+namespace GenericRepository.Controllers
 {
     [ApiVersion("1")]
     [ApiController]

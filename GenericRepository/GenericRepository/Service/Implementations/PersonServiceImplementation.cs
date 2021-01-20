@@ -1,8 +1,8 @@
-﻿using Migrations.Model;
-using Migrations.Repository;
+﻿using GenericRepository.Model;
+using GenericRepository.Repository;
 using System.Collections.Generic;
 
-namespace Migrations.Services.Implementations
+namespace GenericRepository.Services.Implementations
 {
     public class PersonServiceImplementation : IPersonService
     {

@@ -1,19 +1,19 @@
+using GenericRepository.Model.Context;
+using GenericRepository.Repository;
+using GenericRepository.Repository.Implementations;
+using GenericRepository.Services;
+using GenericRepository.Services.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Migrations.Model.Context;
-using Migrations.Repository;
-using Migrations.Repository.Implementations;
-using Migrations.Services;
-using Migrations.Services.Implementations;
 using Serilog;
 using System;
 using System.Collections.Generic;
 
-namespace Migrations
+namespace GenericRepository
 {
     public class Startup
     {
